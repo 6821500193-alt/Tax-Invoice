@@ -19,8 +19,8 @@ with st.sidebar:
 # --- ส่วนประมวลผล ---
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
-    
+    model = genai.GenerativeModel('gemini-2.5-flash')
+
     uploaded_file = st.file_uploader("เลือกไฟล์ PDF ใบกำกับภาษี (รองรับไฟล์หลายหน้า)", type="pdf")
 
     if uploaded_file is not None:
